@@ -658,38 +658,12 @@ p {
   color: #e1e1e1;
   text-align: center;
   padding: 10rem 5%;
-}
-
-.social-media-ctr {
-  padding: 2% 0;
-}
-
-.social-media-ctr a {
-  display: inline-block;
-  text-decoration: none;
-  color: #e1e1e1;
-  padding: 0 2rem;
-}
-
-.social-media-ctr a:hover {
-  color: rgb(240, 185, 11);
-}
-
-.copyright {
-  color: #bbb;
-  padding: 3rem 0;
-  font-size: 1.5rem;
-}
-
-.copyright-company {
-  text-decoration: none;
-  color: #f0b90b;
+  padding-bottom: 1rem;
 }
 
 .footer-logo-ctr {
   position: relative;
   width: 25rem;
-  margin: 0 auto 5rem;
   height: 3rem;
   width: 20rem;
 }
@@ -698,28 +672,66 @@ p {
   height: 3rem;
 }
 
-.footer-links-ctr {
+.footer-company-about {
+  padding: 3rem 0;
+}
+
+.footer-top-ctr {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   width: 100%;
-  height: auto;
-  text-align: center;
-  margin: 2rem 0;
+  margin-bottom: 10rem;
+}
+
+.footer-social-media-ctr {
+  width: 35rem;
+  text-align: left;
+}
+
+.social-media-ctr a {
+  display: inline-block;
+  text-decoration: none;
+  color: #e1e1e1;
+  margin-right: 4rem;
+}
+
+.social-media-ctr a:hover {
+  color: rgb(240, 185, 11);
+}
+
+.footer-links-ctr {
+  width: 20rem;
+  text-align: left;
 }
 
 .footer-link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: #9a9fca;
-  width: 20rem;
-  padding: 0.6rem 1.5rem;
-  margin: 0.5rem;
-  border: 1px solid #9a9fca;
-  border-radius: 5px;
+  line-height: 3rem;
   transition: all 0.2s ease;
 }
 
 .footer-link:hover {
-  background-color: #9a9fca;
-  color: #122029;
+  color: #f0b90b;
+}
+
+.footer-copyright-ctr {
+  border-top: 1px solid #9a9fca;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.copyright {
+  color: #bbb;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.copyright-company {
+  text-decoration: none;
+  color: #f0b90b;
 }
 
 .powered-by {
@@ -807,6 +819,33 @@ p {
   .contact-us-info-ctr {
     width: 100%;
     padding: 5%;
+  }
+
+  .footer-logo-ctr {
+    margin: 0 auto;
+  }
+
+  .footer-company-about {
+    padding: 5rem 0;
+  }
+
+  .footer-top-ctr {
+    display: block;
+  }
+
+  .footer-social-media-ctr {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-media-ctr a {
+    margin: 0 2rem;
+  }
+
+  .footer-links-ctr {
+    width: 20rem;
+    margin: 5rem auto;
+    text-align: center;
   }
 }
 
@@ -942,7 +981,7 @@ p {
     border: 1px solid #f1f1f1;
     background-color: #fff;
     border-radius: 0;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
   }
 
