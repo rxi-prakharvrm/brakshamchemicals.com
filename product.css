@@ -1,0 +1,251 @@
+/* MAIN CONTAINER */
+
+.main-ctr {
+  width: 96%;
+  margin: auto;
+}
+
+.slideshow-ctr {
+  height: 30rem;
+  width: 100%;
+}
+
+.slideshow-inner-ctr {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slideshow {
+  height: 100%;
+  width: 300%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  animation-name: slideshow-anim;
+  animation-iteration-count: infinite;
+  animation-duration: 50s;
+}
+
+.img-slide {
+  height: 100%;
+  width: 33.33%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  transition: all 3s ease;
+}
+
+.img-slide:hover {
+  transform: scale(1.05);
+}
+
+.img-slide1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./res/images/slide1.jpg");
+}
+
+.img-slide2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./res/images/slide2.jpg");
+}
+
+.img-slide3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./res/images/slide3.jpg");
+}
+
+.slide-info-ctr {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slide-quote {
+  color: rgb(240, 185, 11);
+  letter-spacing: 0.5rem;
+}
+
+.slide-header {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+/* Products Icon */
+
+.products-img-ctr {
+  height: 20rem;
+  width: 100%;
+  position: relative;
+}
+
+.gear-icon {
+  width: 8rem;
+  margin: 0 auto;
+  z-index: -1;
+  animation-name: gear-rotation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gear-rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.products-icon {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10rem;
+  z-index: 100;
+}
+
+.about-products {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10rem 5%;
+}
+
+/* Products container */
+
+.products-ctr {
+  padding: 5%;
+}
+
+.products-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.products-row:nth-child(odd) .product:nth-child(1) {
+  width: 65%;
+}
+
+.products-row:nth-child(odd) .product:nth-child(2) {
+  width: 33%;
+}
+
+.products-row:nth-child(even) .product:nth-child(1) {
+  width: 33%;
+}
+
+.products-row:nth-child(even) .product:nth-child(2) {
+  width: 65%;
+}
+
+.product {
+  padding: 3% 5%;
+  margin-bottom: 2%;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px -2px #e7e7e7, -2px -2px 10px -2px #e7e7e7,
+    2px -2px 10px -2px #e7e7e7, -2px 2px 10px -2px #e7e7e7;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.product:hover .product-header {
+  color: #f0b90b;
+}
+
+.product-header {
+  color: #122029;
+  font-weight: 300;
+  padding: 2rem 0;
+}
+
+.product-para {
+  padding: 4rem 2%;
+}
+
+.product-hr {
+  height: 2px;
+  width: 80%;
+  margin: auto;
+  border: 0;
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 780px) {
+  .slide-header {
+    font-size: 4rem;
+  }
+
+  .products-row {
+    display: block;
+  }
+
+  .products-row {
+    width: 100%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product:hover {
+    transform: scale(1.06);
+    z-index: 100;
+  }
+
+  .products-row:nth-child(odd) .product:nth-child(1) {
+    width: 100%;
+  }
+
+  .products-row:nth-child(odd) .product:nth-child(2) {
+    width: 100%;
+  }
+
+  .products-row:nth-child(even) .product:nth-child(1) {
+    width: 100%;
+  }
+
+  .products-row:nth-child(even) .product:nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  .slide-quote {
+    letter-spacing: 0.1rem;
+  }
+
+  .slide-header {
+    font-size: 3rem;
+  }
+
+  .product-header {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slide-quote {
+    font-size: 1.2rem;
+  }
+
+  .slide-header {
+    font-size: 2.2rem;
+  }
+}
