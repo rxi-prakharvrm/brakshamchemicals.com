@@ -3,7 +3,6 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  transition: all 3s ease;
 }
 
 .main-img {
@@ -57,12 +56,22 @@
 
 @media screen and (max-width: 768px) {
   .main-img-header {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
+  .main-img-header {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
   .main-img-ctr {
-    height: 20rem;
+    height: 25rem;
+  }
+
+  .main-img-ctr {
+    font-size: 3rem;
   }
 }
