@@ -149,6 +149,28 @@ p {
   display: block;
 }
 
+/* Covid Update */
+.covid-update-ctr {
+  height: 5rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  color: #fff;
+  background-color: #58a0ff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.covide-update-header {
+  line-height: 5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.covid-update-para {
+  color: #fff;
+}
+
 .main-video-ctr {
   width: 100%;
   background-color: #000;
@@ -190,13 +212,8 @@ p {
 }
 
 /* Main Content Container */
-.covid-update {
-  text-align: center;
+.about-braksham-chemicals {
   padding: 10rem 5%;
-}
-
-.covid-update-header {
-  padding: 2rem 0;
 }
 
 .expert-consultment {
@@ -347,8 +364,8 @@ p {
 }
 
 .design-info-header {
-  font-family: "MonteCarlo", cursive;
-  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   padding: 3rem 0;
 }
 
