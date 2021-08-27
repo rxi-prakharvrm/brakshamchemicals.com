@@ -260,6 +260,7 @@ p {
 
 .designs-ctr {
   padding: 0 5%;
+  overflow-y: hidden;
 }
 
 .design-ctr-overlay {
@@ -811,7 +812,7 @@ p {
 
   .contact-us-ctr {
     width: 100%;
-    padding: 0;
+    padding: 10rem 0;
   }
 
   .contact-us-info-ctr {
