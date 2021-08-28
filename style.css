@@ -151,6 +151,7 @@ p {
 
 /* Covid Update */
 .covid-update-ctr {
+  height: auto;
   width: 100%;
   padding: 1.5rem 2rem;
   color: #fff;
@@ -212,36 +213,79 @@ p {
   transform: translate(-50%, -50%);
 }
 
-/* Main Content Container */
-.about-braksham-chemicals {
-  padding: 10rem 5%;
-}
-
-.expert-consultment {
-  width: 80%;
-  padding: 8rem 2rem;
-  margin: 0 auto;
-  background-color: #122029;
+/* Main Container */
+.vision-mission-header {
+  margin: 10rem;
   text-align: center;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  text-transform: uppercase;
+  color: #777;
 }
 
-.expert-consultment-img {
-  height: 6rem;
-  margin: 1rem auto;
+.vision-outer-ctr {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.expert-consultment-header {
-  padding: 2rem;
-  color: #fff;
+.vision-inner-ctr {
+  margin: 0 10%;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.expert-consultment-para {
-  color: #f0b90b;
+.vision {
+  height: auto;
+  width: 30%;
+  padding: 5rem 2rem;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  overflow: hidden;
+}
+
+.vision:before {
+  content: "";
+  height: 0;
+  width: 0;
+  background-image: linear-gradient(to right top, #9fceee, #d6eef7, #f7f7f7);
+  clip-path: polygon(0 0, 0 0, 100% 100%, 0 100%);
+  transition: all 0.4s ease;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.vision:hover::before {
+  height: 3rem;
+  width: 100%;
+}
+
+.vision:hover .vision-icon-underline {
+  background-color: #79bbe7;
+}
+
+.vision-icon {
+  height: 4.8rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.vision-icon-underline {
+  height: 2px;
+  width: 30%;
+  margin: 2rem auto;
+  background-color: #e1e1e1;
 }
 
 /* Design container */
+/* .main-content-ctr {
+} */
+
 .designs-header,
 .designs-para {
   text-align: center;
@@ -249,18 +293,18 @@ p {
 }
 
 .designs-header {
-  margin-top: 15rem;
   transition: all 0.2s ease;
 }
 
 .designs-para {
   margin-top: 3rem;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .designs-ctr {
-  padding: 0 5%;
+  padding: 10rem 10%;
   overflow-y: hidden;
+  background-color: #fff;
 }
 
 .design-ctr-overlay {
@@ -303,7 +347,7 @@ p {
 
 .design-ctr {
   width: 100%;
-  margin: 10rem 0;
+  margin: 5rem 0;
   background-color: #fff;
   border: 1px solid #f1f1f1;
   box-shadow: 0 20px 30px #ccc;
@@ -320,7 +364,7 @@ p {
 }
 
 .design-img-ctr {
-  height: 50rem;
+  height: 45rem;
   width: 60%;
 }
 
@@ -603,25 +647,33 @@ p {
 }
 
 .direct-mail-sub,
+.direct-mail-mob,
 .direct-mail-body {
   display: block;
-  margin: 2rem 0;
-  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
   font-family: poppins, sans-serif;
   color: #333;
-  border: 1px solid #aaa;
+  background-color: #f1f1f1;
+  border: none;
   outline: none;
 }
 
 .direct-mail-sub {
   font-size: 1.7rem;
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.direct-mail-mob {
+  display: inline-block;
+  font-size: 1.7rem;
 }
 
 .direct-mail-body {
-  height: 12rem;
+  height: 15rem;
   width: 100%;
   margin-bottom: 3rem;
-  font-style: italic;
   font-size: 1.5rem;
   color: green;
 }
@@ -695,7 +747,7 @@ p {
   display: block;
   text-decoration: none;
   color: #9a9fca;
-  line-height: 3rem;
+  line-height: 4rem;
   transition: all 0.2s ease;
 }
 
@@ -770,8 +822,24 @@ p {
 
 /* media queries */
 @media only screen and (max-width: 1000px) {
+  .vision {
+    width: 50%;
+  }
+
+  .designs-ctr {
+    padding: 0 10%;
+  }
+
+  .design-info-header {
+    font-size: 2.5rem;
+  }
+
+  .design-info-para {
+    font-size: 1.6rem;
+  }
+
   .design-img-ctr {
-    height: 45rem;
+    height: 40rem;
   }
 }
 
@@ -792,8 +860,20 @@ p {
     display: block;
   }
 
+  .designs-ctr {
+    padding: 0 5%;
+  }
+
+  .design-info-header {
+    font-size: 2.3rem;
+  }
+
+  .design-info-para {
+    font-size: 1.5rem;
+  }
+
   .design-img-ctr {
-    height: 40rem;
+    height: 35rem;
   }
 
   .about-us-ctr {
@@ -849,14 +929,6 @@ p {
 }
 
 @media screen and (max-width: 610px) {
-  .covid-update-header {
-    font-size: 1.3rem;
-  }
-
-  .covid-update-para {
-    font-size: 1rem;
-  }
-
   h1 {
     font-size: 2.5rem;
   }
@@ -869,8 +941,21 @@ p {
     font-size: 1.5rem;
   }
 
-  .expert-consultment-img {
-    height: 5rem;
+  .vision {
+    width: 100%;
+  }
+
+  .covid-update-header {
+    font-size: 1.3rem;
+  }
+
+  .covid-update-para {
+    font-size: 1rem;
+  }
+
+  .go-down-btn {
+    height: 4rem;
+    width: 4rem;
   }
 
   .design-ctr {
@@ -887,11 +972,6 @@ p {
 
   .overlay-ctr {
     width: 70%;
-  }
-
-  .go-down-btn {
-    height: 4rem;
-    width: 4rem;
   }
 
   .design-img-ctr {
@@ -947,14 +1027,6 @@ p {
 }
 
 @media screen and (max-width: 400px) {
-  .covid-update-header {
-    font-size: 1rem;
-  }
-
-  .covid-update-para {
-    font-size: 0.8rem;
-  }
-
   h1 {
     font-size: 2.3rem;
   }
@@ -967,8 +1039,16 @@ p {
     font-size: 1.3rem;
   }
 
-  .expert-consultment {
-    padding: 4rem 2rem;
+  .covid-update-header {
+    font-size: 1rem;
+  }
+
+  .covid-update-para {
+    font-size: 0.8rem;
+  }
+
+  .vision-inner-ctr {
+    margin: 0 5%;
   }
 
   .designs-header {

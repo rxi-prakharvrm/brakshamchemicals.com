@@ -166,9 +166,10 @@ document.querySelector('.copyright-current-year').innerHTML = date.getFullYear()
 
 // direct mail
 const msgSub = document.querySelector('.direct-mail-sub');
+const senderMob = document.querySelector('.direct-mail-mob');
 const msgBody = document.querySelector('.direct-mail-body');
 const sendBtn = document.querySelector('.send-mail-btn');
 
 sendBtn.addEventListener('click', () => {
-    sendBtn.href = `mailto:contact@brakshamchemicals.com?subject=${msgSub.value}&body=${msgBody.value}`
+    sendBtn.href = `mailto:contact@brakshamchemicals.com?subject=${msgSub.value}&body=${senderMob.value}  \n\n${msgBody.value}`
 })
