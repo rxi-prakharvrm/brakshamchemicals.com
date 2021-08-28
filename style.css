@@ -230,7 +230,7 @@ p {
 
 .vision-inner-ctr {
   margin: 0 10%;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -242,7 +242,9 @@ p {
   width: 30%;
   padding: 5rem 2rem;
   text-align: center;
-  border: 1px solid #e1e1e1;
+  background-color: #fcfcfc;
+  /* border: 1px solid #e1e1e1; */
+  box-shadow: 0 10px 20px -10px #ccc;
   position: relative;
   overflow: hidden;
 }
@@ -257,7 +259,6 @@ p {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: -1;
 }
 
 .vision:hover::before {
@@ -293,6 +294,7 @@ p {
 }
 
 .designs-header {
+  margin-top: 5rem;
   transition: all 0.2s ease;
 }
 
@@ -347,7 +349,7 @@ p {
 
 .design-ctr {
   width: 100%;
-  margin: 5rem 0;
+  margin: 8rem 0;
   background-color: #fff;
   border: 1px solid #f1f1f1;
   box-shadow: 0 20px 30px #ccc;
@@ -823,7 +825,12 @@ p {
 /* media queries */
 @media only screen and (max-width: 1000px) {
   .vision {
-    width: 50%;
+    width: 48%;
+  }
+
+  .vision-3 {
+    width: 100%;
+    margin-top: 3rem;
   }
 
   .designs-ctr {
@@ -943,6 +950,10 @@ p {
 
   .vision {
     width: 100%;
+  }
+
+  .vision-2 {
+    margin-top: 3rem;
   }
 
   .covid-update-header {
