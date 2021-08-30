@@ -71,6 +71,10 @@
     height: 25rem;
   }
 
+  .location-name {
+    font-size: 1.3rem;
+  }
+
   .main-img-ctr {
     font-size: 3rem;
   }

@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["2GoVPZb"]); }
+
+__d("MarketplacePDPAdsQueryReferenceContext",["react"],(function(a,b,c,d,e,f,g){"use strict";a=d("react");b=a.createContext(null);g["default"]=b}),98);
+__d("MarketplacePDPContainerDeferred.react",["deferredLoadComponent","react","requireDeferredForDisplay"],(function(a,b,c,d,e,f,g){"use strict";d("react");a=c("deferredLoadComponent")(c("requireDeferredForDisplay")("MarketplacePDPContainer.react").__setRef("MarketplacePDPContainerDeferred.react"));g["default"]=a}),98);
