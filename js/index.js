@@ -171,7 +171,7 @@ const msgBody = document.querySelector('.direct-mail-body');
 const sendBtn = document.querySelector('.send-mail-btn');
 
 sendBtn.addEventListener('click', () => {
-    sendBtn.href = `mailto:contact@brakshamchemicals.com?subject=${msgSub.value}&body=${senderMob.value}  \n\n${msgBody.value}`
+    sendBtn.href = `mailto:contact@brakshamchemicals.com?subject=${msgSub.value}&body=${senderMob.value},  ${msgBody.value}`
 })
 
 // Input focus effect
