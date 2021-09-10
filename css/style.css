@@ -122,11 +122,32 @@ p {
   box-shadow: 0 10px 15px -6px #bbb;
 }
 
-.header-menu-bar-ctr i {
-  display: none;
+.menu-bar {
+  cursor: pointer;
   position: absolute;
-  top: 3rem;
-  right: 3rem;
+  top: 2rem;
+  right: 2rem;
+}
+
+.line {
+  height: 4px;
+  width: 25px;
+  background-color: #122029;
+  margin: 5px;
+  transform-origin: left;
+  transition: 0.4s ease;
+}
+
+.line1-styled {
+  transform: rotateZ(45deg);
+}
+
+.line2-styled {
+  opacity: 0;
+}
+
+.line3-styled {
+  transform: rotateZ(-45deg);
 }
 
 .header-menu-btn {
@@ -144,18 +165,16 @@ p {
   transition: all 0.4s ease;
 }
 
+.toggle-menu {
+  display: block;
+  margin-top: 0;
+}
+
 .header-menu-inner {
   height: 100%;
   width: 100%;
   text-align: center;
   position: relative;
-}
-
-.header-menu-close-btn {
-  color: #fff;
-  position: absolute;
-  top: 3rem;
-  right: 3rem;
 }
 
 .header-menu-btn-ctr {
@@ -283,22 +302,19 @@ p {
 .vision:before {
   content: "";
   height: 0;
-  width: 0;
-  background-image: linear-gradient(to right top, #9fceee, #d6eef7, #f7f7f7);
-  clip-path: polygon(0 0, 0 0, 100% 100%, 0 100%);
+  width: 20%;
+  border: none;
+  /* background-image: linear-gradient(to right, #6190e8, #a7bfe8); */
+  background-color: #ddd;
+  clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%);
   transition: all 0.4s ease;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 40%;
+  bottom: -1px;
 }
 
 .vision:hover::before {
-  height: 3rem;
-  width: 100%;
-}
-
-.vision:hover .vision-icon-underline {
-  background-color: #79bbe7;
+  height: 2rem;
 }
 
 .vision-icon {
@@ -309,9 +325,14 @@ p {
 
 .vision-icon-underline {
   height: 2px;
-  width: 30%;
+  width: 20%;
   margin: 2rem auto;
-  background-color: #e1e1e1;
+  background-color: #ccc;
+  transition: all 0.4s ease;
+}
+
+.vision:hover .vision-icon-underline {
+  background-color: #6190e8;
 }
 
 .designs-header,

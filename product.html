@@ -28,18 +28,23 @@
         <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 <body>
     <div class="header">
-        <div class="header-logo-ctr"><a href="index.html" class="header-logo"><img class="header-logo-img" src="./res/images/logo.png" alt="logo"></a></div>
+        <div class="header-logo-ctr"><a href="index.html" class="header-logo"><img class="header-logo-img" src="./res/images/logo.png" alt="Logo"></a></div>
         <div class="header-btn-ctr">
             <a href="index.html" class="btn header-btn">HOME</a>
             <a href="product.html" class="btn header-btn">PRODUCTS</a>
             <a href="contact.html" class="btn header-btn">CONTACT US</a>
             <a href="./res/pdf/catalogue.pdf" class="header-btn header-catalogue-btn" target="_blank"><i class="fa fa-download">&nbsp;&nbsp;</i>CATALOGUE</a>
         </div>
-        <div class="header-menu-bar-ctr"><i class="fa fa-bars fa-lg"></i></div>
+        <div class="menu-bar" onclick="toggleMenu()">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
     </div>
     <div class="header-menu">
         <div class="header-menu-inner">
@@ -94,26 +99,26 @@
         <!-- Products section -->
         <div class="products-ctr">
             <div class="products-row">
-                <div class="product">
+                <div class="product" data-aos="fade-right">
                     <h1 class="product-header">CARVING EFFECT</h1>
                     <hr class="product-hr">
                     <p class="product-para">
                         Carving Effect Tiles are good for both walls and floors. It adds great style and texture to your space. When it's about the wall of your home, these carving-style tiles add a sense of illusion to your space.
                     </p>
                 </div>
-                <div class="product">
+                <div class="product" data-aos="fade-left">
                     <h1 class="product-header">ROCKERS EFFECT</h1>
                     <hr class="product-hr">
                     <p class="product-para">Rocker rustic finish floor tiles can be used for both indoor and outdoor.</p>
                 </div>
             </div>
             <div class="products-row">
-                <div class="product">
+                <div class="product" data-aos="fade-up">
                     <h1 class="product-header">HIGH GLOSS EFFECT</h1>
                     <hr class="product-hr">
                     <p class="product-para">For a room to feel lighter and brighter, gloss tiles are the go-to</p>
                 </div>
-                <div class="product">
+                <div class="product" data-aos="fade-up">
                     <h1 class="product-header">DEPTH CARVING EFFECT</h1>
                     <hr class="product-hr">
                     <p class="product-para">Today Depth carving effect in flooring is highly appreciated at offices, restaurants, airports, shopping centers, schools, and more. They are stylish plus durable.                         
@@ -121,7 +126,7 @@
                 </div>
             </div>
             <div class="products-row">
-                <div class="product">
+                <div class="product" data-aos="fade-right">
                     <h1 class="product-header">RUSTIC & ELEVATION</h1>
                     <hr class="product-hr">
                     <p class="product-para">
@@ -129,7 +134,7 @@
                         In modern days, the use of elevation tiles has grown to a significant level. It is because these tiles are modern and natural-looking tiles which are fast becoming a natural choice among discerning homeowners.
                     </p>
                 </div>
-                <div class="product">
+                <div class="product" data-aos="fade-left">
                     <h1 class="product-header">R11, R9</h1>
                     <hr class="product-hr">
                     <p class="product-para">The majority of floor tiles these days are given an anti slip rating. This rating comes in the form of an 'R' value. The 'R' stands for 'ramp test'. This 'R' value ranges from R9, which has a small degree of slip resistance, right up to R13, which is the highest slip resistance.                        
@@ -137,49 +142,49 @@
                 </div>
             </div>
             <div class="products-row">
-                <div class="product">
+                <div class="product" data-aos="fade-up">
                     <h1 class="product-header">SALATURA<br>(BODY TR)</h1>
                     <hr class="product-hr">
                     <p class="product-para">Salatura coating material is used for all products of the Taurus COLOR</p>
                 </div>
-                <div class="product">
+                <div class="product" data-aos="fade-up">
                     <h1 class="product-header">COMFY WHITE</h1>
                     <hr class="product-hr">
                     <p class="product-para">White tiles reflect light in a pleasing way and guarantee a brighter floor than any other colour. White ensures a well-defined sense of space and makes the room seem larger.</p>
                 </div>
             </div>
             <div class="products-row">
-                <div class="product">
+                <div class="product" data-aos="fade-right">
                     <h1 class="product-header">GVT, PGVT</h1>
                     <hr class="product-hr">
                     <p class="product-para">Digital Glazed Porcelain tiles are the popularly used vitrified tiles that are that are developed using digital printing technology. They are single layered tiles pressed in the hydraulic pressing machine under high pressure to attain the durability.</p>
                 </div>
-                <div class="product">
+                <div class="product" data-aos="fade-left">
                     <h1 class="product-header">WOODEN TILES</h1>
                     <hr class="product-hr">
                     <p class="product-para">Wooden tiles look good in all corners of the house, business establishments and even outdoors</p>
                 </div>
             </div>
             <div class="products-row">
-                <div class="product">
+                <div class="product" data-aos="fade-up">
                     <h1 class="product-header">SATIN</h1>
                     <hr class="product-hr">
                     <p class="product-para">
                         Satin finishes are produced through the same process as polished but using fewer polishing wheels. This lends a softer and less shiny appearance to the tile, the perfect balance between polished and honed.</p>
                 </div>
-                <div class="product">
+                <div class="product" data-aos="fade-up">
                     <h1 class="product-header">SLABS</h1>
                     <hr class="product-hr">
                     <p class="product-para">Tiles are easy to install on all floor options and compared to its small size and thickness slab, it is available at low cost. Slab is the Integration of tiles. It is bigger in size and shape but the quality is the same as the tiles. The size and shape differ only from the tile.</p>
                 </div>
             </div>
             <div class="products-row">
-                <div class="product">
+                <div class="product" data-aos="fade-right">
                     <h1 class="product-header">3D EFFECT</h1>
                     <hr class="product-hr">
                     <p class="product-para">3d tiles not just only give a three-dimensional look to a place with amazing designs but also a lot more functionality as well. These tiles don't get stained or scratched even if you scratch the tiles with a knife or spill any acid on the surface.</p>
                 </div>
-                <div class="product">
+                <div class="product" data-aos="fade-left">
                     <h1 class="product-header">SUGAR R11</h1>
                     <hr class="product-hr">
                     <p class="product-para">Sugar finish floor tiles are an ideal choice for all kinds of places such as living rooms, swimming pool decks, porches, bedrooms, offices, bathrooms and backyards.</p>
@@ -214,5 +219,12 @@
         </div>
     </div>
     <script src="js/product.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 200,
+          duration: 1000
+      });
+    </script>
 </body>
 </html>
