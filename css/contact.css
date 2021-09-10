@@ -1,5 +1,5 @@
 .main-img-ctr {
-  height: 30rem;
+  height: 55rem;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -17,6 +17,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  transition: all 3s ease;
 }
 
 .main-img:hover {
@@ -57,24 +58,29 @@
   .main-img-header {
     font-size: 5rem;
   }
+
+  .main-img-ctr {
+    height: 40rem;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 610px) {
   .main-img-header {
     font-size: 4rem;
+  }
+
+  .main-img-ctr {
+    height: 30rem;
   }
 }
 
 @media screen and (max-width: 400px) {
   .main-img-ctr {
     height: 25rem;
+    font-size: 3rem;
   }
 
   .location-name {
     font-size: 1.3rem;
-  }
-
-  .main-img-ctr {
-    font-size: 3rem;
   }
 }
