@@ -25,17 +25,17 @@ covidUpdateCtrCloseBtn.addEventListener("click", () => {
 })
 
 // Copy to clipboard
-var text1 = document.querySelector(".mob-1");
-var text2 = document.querySelector(".mob-2");
+// var text1 = document.querySelector(".mob-1");
+// var text2 = document.querySelector(".mob-2");
 var text3 = document.querySelector(".email-1");
 
-if(text1) {
-    copyToClipboard(text1);
-}
+// if(text1) {
+//     copyToClipboard(text1);
+// }
 
-if(text2) {
-    copyToClipboard(text2);
-}
+// if(text2) {
+//     copyToClipboard(text2);
+// }
 
 if(text3) {
     copyToClipboard(text3);
