@@ -34,7 +34,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="header-logo-ctr"><a href="index.html" class="header-logo"><img class="header-logo-img" src="./res/images/logobraksham_new.svg" alt="Logo"></a></div>
+        <div class="header-logo-ctr"><a href="index.html" class="header-logo"><img class="header-logo-img" src="./res/images/logobraksham_new.png" alt="Logo"></a></div>
         <div class="header-btn-ctr">
             <a href="index.html" class="btn header-btn">HOME</a>
             <a href="product.html" class="btn header-btn">PRODUCTS</a>
@@ -59,11 +59,11 @@
     </div>
 
     <!-- // Covid-19 updates -->
-    <div class="covid-update-ctr">
+    <!-- <div class="covid-update-ctr">
         <h4 class="covid-update-header">Covid Update</h4>
         <p class="covid-update-para">Doing our hard work to keep your project finish on time.</p>
         <span class="covid-update-ctr-close-btn"><i class="fa fa-close fa-lg"></i></span>
-    </div>
+    </div> -->
 
     <div class="main-video-ctr">
         <video class="main-video" autoplay muted loop" onended="videoReplay()">
@@ -279,8 +279,10 @@
                 <p class="or">OR</p>
                 
                 <div class="direct-mail-ctr">
-                    <input class="direct-mail-sub" type="text" placeholder="Subject">
-                    <input class="direct-mail-mob" type="text" placeholder="Mobile Number">
+                    <div class="direct-mail-inner-ctr">
+                        <input class="direct-mail-sub" type="text" placeholder="Subject">
+                        <input class="direct-mail-mob" type="text" placeholder="Mobile Number">
+                    </div>
                     <textarea class="direct-mail-body" placeholder="Type your message.."></textarea>
                     <a href="" class="send-mail-btn btn-black"><i class="fa fa-envelope-o"></i> &nbsp;Send Email</a>
                 </div>
@@ -318,7 +320,7 @@
     <script>
       AOS.init({
           offset: 180,
-          duration: 1000
+          duration: 900
       });
     </script>
 </body>
