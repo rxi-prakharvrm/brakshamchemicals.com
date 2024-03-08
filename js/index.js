@@ -3,8 +3,8 @@ let headerMenu = document.querySelector('.header-menu');
 let headerMenuCloseBtn = document.querySelector('.header-menu-close-btn');
 let headerMenuBtn = document.querySelector('.header-menu-btn');
 let headerMenuInner = document.querySelector('.header-menu-inner');
-let covidUpdateCtr = document.querySelector('.covid-update-ctr');
-let covidUpdateCtrCloseBtn = document.querySelector('.covid-update-ctr-close-btn');
+// let covidUpdateCtr = document.querySelector('.covid-update-ctr');
+// let covidUpdateCtrCloseBtn = document.querySelector('.covid-update-ctr-close-btn');
 let body = document.querySelector('body');
 
 // Header Menu Button Animation
@@ -20,9 +20,9 @@ function toggleMenu() {
 }
 
 // Covid Update Container
-covidUpdateCtrCloseBtn.addEventListener("click", () => {
-    covidUpdateCtr.style.display = "none";
-})
+// covidUpdateCtrCloseBtn.addEventListener("click", () => {
+//     covidUpdateCtr.style.display = "none";
+// })
 
 // Copy to clipboard
 // var text1 = document.querySelector(".mob-1");
